@@ -53,3 +53,5 @@ Button.defaultProps = {
 }
 
 export default Button;
+
+export type ButtonProps = Props;

@@ -1,7 +1,8 @@
 import './style.scss'
 
 type Props = {
-  type?: React.ButtonHTMLAttributes<HTMLButtonElement>['type'],
+  id?: string,
+  type?: string,
   placeholder: string,
   theme?: string,
   size?: string,
