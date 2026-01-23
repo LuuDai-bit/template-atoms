@@ -1,5 +1,3 @@
-import './style.scss'
-
 type Props = {
   content: string,
   className?: string,

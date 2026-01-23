@@ -8,6 +8,7 @@ import Input from './components/atoms/Input/Input'
 import Text from './components/atoms/Text/Text'
 import Icon from './components/atoms/Icon/Icon'
 import InputField from './components/molecules/InputField/InputField'
+import InputButton from './components/molecules/InputButton/InputButton'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -68,6 +69,9 @@ function App() {
       <div>
         <p>Test molecules</p>
         <InputField placeholder="Enter text..." content="First name" />
+        <InputButton placeholder='Search'
+                     content='Search'
+                     onClick={() => alert('InputButton clicked!')} />
       </div>
     </>
   )

@@ -22,9 +22,9 @@ export const ButtonSizes = {
 type Props = {
   content: string,
   type: React.ButtonHTMLAttributes<HTMLButtonElement>['type'],
-  theme: string,
-  size: string,
-  className: string,
+  theme?: string,
+  size?: string,
+  className?: string,
   disabled: boolean,
   onClick: () => void,
 }
