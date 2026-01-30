@@ -9,9 +9,33 @@ import Text from './components/atoms/Text/Text'
 import Icon from './components/atoms/Icon/Icon'
 import InputField from './components/molecules/InputField/InputField'
 import InputButton from './components/molecules/InputButton/InputButton'
+import Table from './components/organisism/Table/Table'
 
 function App() {
   const [count, setCount] = useState(0)
+
+  const header = [
+    { label: 'Name', sortable: true, sortDirection: 'asc', onSort: () => console.log('Sort Name') },
+    { label: 'Age', sortable: true, onSort: () => console.log('Sort Age') },
+    { label: 'Active', sortable: false },
+  ];
+
+  const rows = [
+    {
+      cells: [
+        { content: 'Alice' },
+        { content: '30', isNumeric: true },
+        { content: '', isBoolean: true, customIcon: 'check' as const },
+      ],
+    },
+    {
+      cells: [
+        { content: 'Bob' },
+        { content: '25', isNumeric: true },
+        { content: '', isBoolean: true, customIcon: 'close' as const },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -72,6 +96,11 @@ function App() {
         <InputButton placeholder='Search'
                      content='Search'
                      onClick={() => alert('InputButton clicked!')} />
+      </div>
+
+      <div>
+        <p>Table</p>
+        <Table headers={header} rows={rows} />
       </div>
     </>
   )
