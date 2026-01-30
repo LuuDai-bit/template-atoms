@@ -1,7 +1,7 @@
-import Input from '../../atoms/Input/Input';
-import Label from '../../atoms/Label/Label';
-import type { InputProps } from '../../atoms/Input/Input';
-import type { LabelProps } from '../../atoms/Label/Label';
+import Input from '@atoms/Input/Input';
+import Label from '@atoms/Label/Label';
+import type { InputProps } from '@atoms/Input/Input';
+import type { LabelProps } from '@atoms/Label/Label';
 
 type Props = InputProps & LabelProps;
 

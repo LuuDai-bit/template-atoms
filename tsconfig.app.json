@@ -1,6 +1,19 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "paths": {
+      "@atoms/*": ["src/components/atoms/*"],
+      "@atoms": ["src/components/atoms"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@molecules": ["src/components/molecules"],
+      "@organisms/*": ["src/components/organisms/*"],
+      "@organisms": ["src/components/organisms"],
+      "@templates/*": ["src/components/templates/*"],
+      "@templates": ["src/components/templates"],
+      "@pages/*": ["src/components/pages/*"],
+      "@pages": ["src/components/pages"],
+    },
     "target": "ES2022",
     "useDefineForClassFields": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],

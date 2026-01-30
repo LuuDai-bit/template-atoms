@@ -1,7 +1,7 @@
-import Input from '../../atoms/Input/Input';
-import Button from '../../atoms/Button/Button';
-import type { InputProps } from '../../atoms/Input/Input';
-import type { ButtonProps } from '../../atoms/Button/Button';
+import Input from '@atoms/Input/Input';
+import Button from '@atoms/Button/Button';
+import type { InputProps } from '@atoms/Input/Input';
+import type { ButtonProps } from '@atoms/Button/Button';
 
 type Props = InputProps & ButtonProps;
 

@@ -1,8 +1,8 @@
-import Text from '../../atoms/Text/Text';
-import type { ButtonProps } from '../../atoms/Button/Button';
-import Icon from '../../atoms/Icon/Icon';
-import type { IconName } from '../../atoms/Icon/IconMap';
-import Button from '../../atoms/Button/Button';
+import Text from '@atoms/Text/Text';
+import type { ButtonProps } from '@atoms/Button/Button';
+import Icon from '@atoms/Icon/Icon';
+import type { IconName } from '@atoms/Icon/IconMap';
+import Button from '@atoms/Button/Button';
 
 type Props = {
   cells: Array<{
