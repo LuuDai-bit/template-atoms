@@ -2,6 +2,7 @@ type Props = {
   src: string,
   alt: string,
   className?: string,
+  title?: string,
   width?: number,
   height?: number,
 }
@@ -10,6 +11,7 @@ const Image = ({
   src,
   alt,
   className = '',
+  title,
   width,
   height,
 }: Props) => {
@@ -17,6 +19,7 @@ const Image = ({
     <img
       src={src}
       alt={alt}
+      title={title}
       className={className}
       width={width}
       height={height}
@@ -26,6 +29,7 @@ const Image = ({
 
 Image.defaultProps = {
   className: '',
+  title: undefined,
   width: undefined,
   height: undefined,
 }

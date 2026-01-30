@@ -11,6 +11,7 @@ import InputField from './components/molecules/InputField/InputField'
 import InputButton from './components/molecules/InputButton/InputButton'
 import Table from './components/organisism/Table/Table'
 import Image from '@atoms/Image/Image'
+import UserAvatar from '@molecules/UserAvatar/UserAvatar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -102,6 +103,9 @@ function App() {
         <InputButton placeholder='Search'
                      content='Search'
                      onClick={() => alert('InputButton clicked!')} />
+
+        <UserAvatar src="https://images.pexels.com/photos/31299770/pexels-photo-31299770.jpeg"
+                    userName="Noah" />
       </div>
 
       <div>
