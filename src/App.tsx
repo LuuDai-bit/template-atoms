@@ -10,6 +10,7 @@ import Icon from './components/atoms/Icon/Icon'
 import InputField from './components/molecules/InputField/InputField'
 import InputButton from './components/molecules/InputButton/InputButton'
 import Table from './components/organisism/Table/Table'
+import Image from '@atoms/Image/Image'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -87,6 +88,11 @@ function App() {
           size="24px"
           color="#000000"
           className="icon"
+        />
+
+        <Image
+          src="https://images.pexels.com/photos/31299770/pexels-photo-31299770.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          alt="Test Image"
         />
       </div>
 
